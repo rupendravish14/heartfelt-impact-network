@@ -25,7 +25,7 @@ const Index = () => {
         <Testimonials />
         <DonatePreview />
         <Partners />
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-16 bg-green-50">
           <div className="max-w-md mx-auto">
             <NewsletterSignup />
           </div>

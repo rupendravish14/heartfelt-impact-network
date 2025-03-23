@@ -13,7 +13,7 @@ const partners = [
 
 const Partners: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-green-50">
       <div className="container mx-auto px-4">
         <SectionTitle
           overline="Our Partners"
@@ -38,7 +38,7 @@ const Partners: React.FC = () => {
         
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">
-            Interested in becoming a partner? <a href="/contact" className="text-primary font-medium hover:underline">Contact us</a>
+            Interested in becoming a partner? <a href="/contact" className="text-green-600 font-medium hover:underline">Contact us</a>
           </p>
         </div>
       </div>
