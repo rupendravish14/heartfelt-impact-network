@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import Button from '../common/Button';
 
 const Hero: React.FC = () => {
@@ -33,7 +32,6 @@ const Hero: React.FC = () => {
             <Button 
               variant="secondary" 
               size="lg" 
-              as={Link} 
               to="/donate" 
               className="shadow-lg"
             >
@@ -43,7 +41,6 @@ const Hero: React.FC = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              as={Link} 
               to="/get-involved" 
               className="bg-white/10 border-white/20 text-white hover:bg-white/20"
               icon={<ArrowRight size={18} />}

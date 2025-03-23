@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
         {/* Donate Button */}
         <div className="hidden lg:block z-10">
-          <Button variant="primary" size="md" as={Link} to="/donate">
+          <Button variant="primary" size="md" to="/donate">
             Donate Now
           </Button>
         </div>
@@ -128,7 +128,6 @@ const Navbar: React.FC = () => {
               variant="primary" 
               size="lg" 
               fullWidth 
-              as={Link} 
               to="/donate"
               onClick={() => setMobileMenuOpen(false)}
             >

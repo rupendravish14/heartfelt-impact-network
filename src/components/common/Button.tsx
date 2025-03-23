@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -10,6 +10,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
   fullWidth?: boolean;
+  to?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   iconPosition = 'left',
   fullWidth = false,
+  to,
   ...props
 }) => {
   const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20 active:scale-[0.98]';
@@ -39,6 +41,27 @@ const Button: React.FC<ButtonProps> = ({
   };
   
   const widthStyles = fullWidth ? 'w-full' : '';
+  
+  if (to) {
+    return (
+      <Link
+        to={to}
+        className={cn(
+          baseStyles,
+          variantStyles[variant],
+          sizeStyles[size],
+          widthStyles,
+          'button-hover',
+          className
+        )}
+        onClick={props.onClick}
+      >
+        {icon && iconPosition === 'left' && <span className="mr-2">{icon}</span>}
+        {children}
+        {icon && iconPosition === 'right' && <span className="ml-2">{icon}</span>}
+      </Link>
+    );
+  }
   
   return (
     <button

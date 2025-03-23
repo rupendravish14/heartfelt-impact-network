@@ -72,7 +72,6 @@ const Programs: React.FC = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            as={Link} 
             to="/programs"
             className="border-primary text-primary hover:bg-primary/5"
           >

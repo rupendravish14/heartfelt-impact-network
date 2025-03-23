@@ -59,7 +59,6 @@ const DonatePreview: React.FC = () => {
               <Button 
                 variant="primary" 
                 size="lg" 
-                as={Link} 
                 to="/donate" 
                 icon={<Heart size={18} />}
                 iconPosition="left"
