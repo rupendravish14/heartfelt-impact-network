@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -137,7 +136,6 @@ const Programs = () => {
                 <Button 
                   variant="secondary" 
                   size="lg" 
-                  as={Link} 
                   to="/donate"
                 >
                   Donate Now
@@ -145,7 +143,6 @@ const Programs = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  as={Link} 
                   to="/get-involved"
                   className="border-white text-white hover:bg-white/10"
                 >

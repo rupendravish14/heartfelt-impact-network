@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -54,7 +55,6 @@ const Button: React.FC<ButtonProps> = ({
           'button-hover',
           className
         )}
-        onClick={props.onClick}
       >
         {icon && iconPosition === 'left' && <span className="mr-2">{icon}</span>}
         {children}
